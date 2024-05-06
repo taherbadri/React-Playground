@@ -1,4 +1,5 @@
 "use client";
+import Card from "@/components/useState/birthday-remider/Card";
 import data from "@/utils/data";
 import React, { useState } from "react";
 
@@ -13,24 +14,7 @@ const BirthdayReminder = () => {
 		<div>
 			<section className="max-w-md mx-auto flex flex-col items-center justify-center gap-4 shadow rounded-xl mb-4 p-4">
 				<h3 className="text-2xl my-4">{people.length} birthdays today</h3>
-				{people.map((person) => {
-					return (
-						<article
-							key={person.id}
-							className="card card-bordered w-full shadow-sm card-side"
-						>
-							<figure className="avatar">
-								<div className="w-24">
-									<img src={person.image} alt={person.name} />
-								</div>
-							</figure>
-							<div className="card-body">
-								<h2 className="card-title">{person.name}</h2>
-								<p>{person.age} years old</p>
-							</div>
-						</article>
-					);
-				})}
+				<Card people={people} />
 				{people.length < 1 ? (
 					<button
 						className="btn btn-block btn-primary"

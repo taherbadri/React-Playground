@@ -50,6 +50,18 @@ const Drawer = ({ children }) => {
 								</li>
 							</ul>
 						</div>
+						<div className="dropdown dropdown-end">
+							<div className="btn btn-ghost" tabIndex={0}>
+								useEffect
+							</div>
+							<ul className="dropdown-content menu w-52 rounded-box p-2 mt-2 bg-base-300 text-gray-600">
+								<li>
+									<Link href={"/useEffect/tours"} className="capitalize">
+										tours
+									</Link>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				{/* Page content here */}
@@ -87,8 +99,38 @@ const Drawer = ({ children }) => {
 							<div className="collapse-content">
 								<ul className="menu menu-vertical">
 									<li>
-										<Link className="capitalize" href={"/useEffect/"}>
+										<Link className="capitalize" href={"/useEffect/tours"}>
 											tours
+										</Link>
+									</li>
+									<li>
+										<Link className="capitalize" href={"/useEffect/"}>
+											reviews
+										</Link>
+									</li>
+									<li>
+										<Link className="capitalize" href={"/useEffect/"}>
+											questions
+										</Link>
+									</li>
+									<li>
+										<Link className="capitalize" href={"/useEffect/"}>
+											menu
+										</Link>
+									</li>
+									<li>
+										<Link className="capitalize" href={"/useEffect/"}>
+											tabs
+										</Link>
+									</li>
+									<li>
+										<Link className="capitalize" href={"/useEffect/"}>
+											stripe menu
+										</Link>
+									</li>
+									<li>
+										<Link className="capitalize" href={"/useEffect/"}>
+											slider
 										</Link>
 									</li>
 									<li>
